@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* En-tête avec image de fond */
+header {
+    background: url('metropole.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 3rem 0;  /* Augmente le padding pour laisser plus d'espace pour l'image */
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 2; /* S'assurer que le texte reste au-dessus de l'image */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    z-index: 2;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    z-index: 2;
+}
+
+/* Section Hero */
+.hero {
+    background: rgba(0, 0, 0, 0.5);  /* Légère teinte sombre sur l'image pour améliorer la lisibilité du texte */
+    padding: 2rem 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.hero .btn {
+    background: #0066cc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #005bb5;
+}
+
+/* Section des services */
+#services-preview {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.service-image {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-image img:hover {
+    transform: scale(1.1);  /* Effet de zoom lors du survol de l'image */
+}
+
+.service-image h4 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Section Témoignages */
+#testimonials {
+    background: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+#testimonials p {
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+/* Section Contact */
+#contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#contact button {
+    background: #0066cc;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background: #005bb5;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
